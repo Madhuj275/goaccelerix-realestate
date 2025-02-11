@@ -1,78 +1,50 @@
-# Real Estate CRM
+# Real Estate CRM Dashboard
 
-A comprehensive Real Estate CRM system built with React, TypeScript, and Node.js.
+## Overview
+The *Real Estate CRM Dashboard* is a web application built using *React.js, **TypeScript, **Node.js, and **Express.js*. The platform allows users to efficiently manage leads and properties, offering seamless interaction between frontend and backend.
 
 ## Features
 
-- Dashboard with key metrics
-- Lead management with document uploads
-- Property management with filtering options
-- Beautiful and responsive UI
-- Error handling and validation
-- Search functionality
+### Leads Section
+- Create a lead using Phone Number and Name.
+- Edit lead details.
+- Retrieve and display all leads in a paginated list.
+- Implement dynamic search to filter leads by name or phone number.
+- Upload and manage documents related to a lead.
 
-## Tech Stack
+### Property Section
+- Add property details categorized into *Residential, Commercial, and Land*.
+- Define property attributes such as *size, location, budget, and availability*.
+- Display a list of all properties with dynamic search functionality.
+- Implement an edit property feature to update details.
 
-- Frontend:
-  - React
-  - TypeScript
-  - Tailwind CSS
-  - React Router
-  - React Hook Form
-  - Lucide React (icons)
+### Backend API
+- Developed using *Node.js* and *Express.js*.
+- Implements proper *data validation* and *error handling*.
+- Seamlessly connects with the frontend.
 
-- Backend:
-  - Node.js
-  - Express
-  - Multer (file uploads)
+## Installation
+### Prerequisites
+- Node.js
+- Express.js
+- React.js
 
-## Getting Started
-
-1. Install dependencies:
-   ```bash
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/real-estate-crm.git
+   cd real-estate-crm
+   ```
+2. Install dependencies:
+   ```sh
    npm install
    ```
 
-2. Start the development server:
-   ```bash
-   npm run dev:all
+3. Start the development server:
+   ```sh
+   npm run dev  # Starts both frontend and backend
    ```
 
-3. Open http://localhost:5173 in your browser
 
-## Project Structure
 
-- `/src` - Frontend source code
-  - `/components` - Reusable UI components
-  - `/pages` - Main application pages
-  - `/types` - TypeScript type definitions
-  - `/lib` - Utility functions
-- `/server` - Backend API implementation
-- `/uploads` - Uploaded files storage
 
-## API Endpoints
-
-### Leads
-- `GET /api/leads` - Get all leads
-- `POST /api/leads` - Create a new lead
-- `PUT /api/leads/:id` - Update a lead
-- `DELETE /api/leads/:id` - Delete a lead
-- `POST /api/leads/:id/documents` - Upload a document for a lead
-
-### Properties
-- `GET /api/properties` - Get all properties
-- `POST /api/properties` - Create a new property
-- `PUT /api/properties/:id` - Update a property
-- `DELETE /api /properties/:id` - Delete a property
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-MIT
